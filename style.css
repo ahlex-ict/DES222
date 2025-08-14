@@ -35,7 +35,7 @@ body {
 /* Main body font import */
 .plus-jakarta-sans-import {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 1em;
   font-weight: 500;
   font-style: normal;
 }
@@ -90,9 +90,9 @@ body {
 .mid-image-blurb,
 .bottom-image-blurb {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     color: var(--white);
-    padding: 0.5em;
+    padding: 3em;
     text-align: center;
 }
 
@@ -161,9 +161,8 @@ body {
 
 
 /* Mobile grid */
-@media (max-width: 600px) {
-  .main-container {
-    column-gap: 1em;
+.main-container {
+   grid-template:
      "ban1 ban1 ban1 ban1" minmax(8em, auto)
      " .   .   .   . " minmax(3em, auto)
      " . ti1 ti1 . " minmax(32em, auto)
@@ -187,19 +186,6 @@ body {
      "ban4 ban4 ban4 ban4" minmax(2em,auto)
      " .   .   .   . " minmax(1em, auto)
      " . ref ref . " minmax(2em,auto);
-        }
-  .top-image img,
-  .mid-image img,
-  .bottom-image img {
-    width: 100%;
-    height: auto; /* Remove fixed height for mobile */
-    max-width: 100vw;
-    border-radius: 8px;
-  }
-  .banner-title {
-    font-size: 2.5em;
-  }
-}
 }
 
 /* Tablet grid */
