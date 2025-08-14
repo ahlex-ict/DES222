@@ -12,13 +12,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-/* Defines the main container size, we are limiting to 72em max for most desktop monitors other than the ultrawide weirdos */
 .main-container {
+    width: 100vw;
     max-width: 72em;
     font-family: Inter;
-    -webkit-text-size-adjust: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Binary background effect code (no touching) */
@@ -55,20 +63,59 @@ body {
     width: 100%;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .banner-title {
-    flex: 1;
+    flex: 1 1 0;
     text-align: center;
     font-family: "Libre Barcode 128 Text", cursive;
     font-size: 5em;
+    padding: 0.5em 0.5em;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .banner-imageL,
 .banner-imageR {
-    width: auto;
+    flex: 0 0 auto;
+    width: 7em;
+    max-width: 18vw;
     height: auto;
-    margin: 0;
+    object-fit: contain;
+    margin: 0 0.5em;
+    display: block;
+}
+
+/* Responsive adjustments for banners and barcode heads */
+@media (max-width: 900px) {
+  .banner-title {
+    font-size: 3em;
+    padding: 0.4em 0.3em;
+  }
+  .banner-imageL,
+  .banner-imageR {
+    width: 4em;
+    max-width: 14vw;
+    margin: 0 0.3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-title {
+    font-size: 2em;
+    padding: 0.3em 0.2em;
+  }
+  .banner-imageL,
+  .banner-imageR {
+    width: 2.5em;
+    max-width: 10vw;
+    margin: 0 0.15em;
+  }
 }
 
 .red-letter {
