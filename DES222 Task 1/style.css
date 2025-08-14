@@ -1,0 +1,235 @@
+/* colour palette */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #F70404;
+    --grey: #808080;
+}
+
+/* The body of the document has a black background and is set up as a vertical flexbox. */
+body {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Defines the main container size, we are limiting to 72em max for most desktop monitors other than the ultrawide weirdos */
+.main-container {
+    max-width: 72em;
+    font-family: Inter;
+}
+
+/* Binary background effect code (no touching) */
+#binary-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: block;
+  background: var(--black);
+}
+
+/* Main body font import */
+.plus-jakarta-sans-import {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Banner object styling */
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    min-height: 8em;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-title {
+    flex: 1;
+    text-align: center;
+    font-family: "Libre Barcode 128 Text", cursive;
+    font-size: 5em;
+}
+
+.banner-imageL,
+.banner-imageR {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.red-letter {
+  color: var(--red);
+}
+
+/* Image styling */
+.top-image img,
+.mid-image img,
+.bottom-image img {
+    width: 100%;
+    height: 25em;
+    object-fit: cover;  
+    border-radius: 12px; 
+    display: block;
+}
+
+/* Image Blurb styling */
+.top-image-blurb,
+.mid-image-blurb,
+.bottom-image-blurb {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2em;
+    color: var(--white);
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* Reference Page styling */
+#referencePage {
+    font-size: 1em;
+    color: var(--grey);
+    padding: 0.5em;
+    text-align: left;
+    white-space: pre-line;
+}
+
+/* Grid area naming conventions */
+#banner1 {
+    grid-area: ban1;
+}
+
+#topImage1 {
+    grid-area: ti1;                                                                             
+}
+
+#topImage2 {
+    grid-area: ti2;
+}
+
+#topImage3 {
+    grid-area: ti3;
+}
+
+#banner2 {
+    grid-area: ban2;
+}
+
+#midImage1 {
+    grid-area: mi1;
+}
+
+#midImage2 {
+    grid-area: mi2;
+}
+
+#banner3 {
+    grid-area: ban3
+}
+
+#bottomImage1 {
+    grid-area: bi1;
+}
+
+#bottomImage2 {
+    grid-area: bi2;
+}
+
+#banner4 {
+    grid-area: ban4;
+}
+ #referencePage {
+    grid-area: ref;
+ }
+
+/* Use a flexible layout grid */
+.main-container {
+    display: grid;
+    column-gap: 3em;
+}
+
+
+/* Mobile grid */
+.main-container {
+   grid-template:
+     "ban1 ban1 ban1 ban1" minmax(8em, auto)
+     " .   .   .   . " minmax(3em, auto)
+     " . ti1 ti1 . " minmax(32em, auto)
+     " .   .   .   . " minmax(3em, auto)
+     " . ti2 ti2 . " minmax(32em, auto)
+     " .   .   .   . " minmax(3em, auto)
+     " . ti3 ti3 . " minmax(32em, auto)
+     " .   .   .   . " minmax(3em, auto)
+     "ban2 ban2 ban2 ban2" minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     " .  mi1 mi1 . " minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     " .  mi2 mi2 . " minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     "ban3 ban3 ban3 ban3" minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     " .  bi1 bi1 . " minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     " .  bi2 bi2 . " minmax(2em,auto)
+     " .   .   .   . " minmax(3em, auto)
+     "ban4 ban4 ban4 ban4" minmax(2em,auto)
+     " .   .   .   . " minmax(1em, auto)
+     " . ref ref . " minmax(2em,auto);
+}
+
+/* Tablet grid */
+@media (min-width: 50em) {
+.main-container {
+   grid-template:
+     "ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1" minmax(8em, auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ti1 ti1 ti1 ti1 ti2 ti2 ti2 ti2" minmax(32em, auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     " .   .  ti3 ti3 ti3 ti3   .   . " minmax(4em, auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2" minmax(8em, auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "mi1 mi1 mi1 mi1 mi2 mi2 mi2 mi2" minmax(2em, auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3" minmax(2em,auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "bi1 bi1 bi1 bi1 bi2 bi2 bi2 bi2" minmax(2em,auto)
+     " .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4" minmax(2em,auto)
+     " .   .   .   .   .   .   .   . " minmax(1em, auto)
+     "ref ref ref ref ref ref ref ref" minmax(2em,auto);
+    }
+}
+
+/* Desktop grid */
+@media (min-width: 75em) {
+.main-container {
+   grid-template:
+     "ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1 ban1" minmax(8em, auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ti1 ti1 ti1 ti1 ti2 ti2 ti2 ti2 ti3 ti3 ti3 ti3" minmax(32em, auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2 ban2" minmax(8em, auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "mi1 mi1 mi1 mi1 mi1 mi1 mi2 mi2 mi2 mi2 mi2 mi2" minmax(2em, auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3 ban3" minmax(2em,auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "bi1 bi1 bi1 bi1 bi1 bi1 bi2 bi2 bi2 bi2 bi2 bi2" minmax(2em,auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(3em, auto)
+     "ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4 ban4" minmax(2em,auto)
+     " .   .   .   .   .   .   .   .   .   .   .   . " minmax(1em, auto)
+     "ref ref ref ref ref ref ref ref ref ref ref ref" minmax(2em,auto);
+    }
+}
