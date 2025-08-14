@@ -1,0 +1,33 @@
+Added everything
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch ClientIconsFillTheBlanks
+# Changes to be committed:
+#	new file:   .DS_Store
+#	new file:   images/.DS_Store
+#	deleted:    images/Anuj.jpeg
+#	deleted:    images/Bob.jpeg
+#	deleted:    images/Diana.jpeg
+#	deleted:    images/Example_Client_Icon_A.png
+#	deleted:    images/Example_Client_Icon_B.png
+#	deleted:    images/Example_Client_Icon_C.png
+#	deleted:    images/Example_Client_Icon_D.png
+#	deleted:    images/Example_Client_Icon_E.png
+#	deleted:    images/Example_Client_Icon_F.png
+#	deleted:    images/Example_Client_Icon_G.png
+#	deleted:    images/Example_Client_Icon_H.png
+#	new file:   images/barcodeHeadL.jpg
+#	new file:   images/barcodeHeadR.jpg
+#	new file:   images/darkcameras.jpg
+#	new file:   images/darkscreens.jpg
+#	new file:   images/handsPhone.jpg
+#	new file:   images/monitoringImage.jpg
+#	new file:   images/peakingBlinds.jpg
+#	new file:   images/schizocode1.jpg
+#	new file:   images/watchingMan1.jpg
+#	new file:   images/watchingMan2.jpg
+#	new file:   images/webcam.JPG
+#	modified:   index.html
+#	modified:   style.css
+#

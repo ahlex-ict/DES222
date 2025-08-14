@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 99863c450bc17f65376a5d0dd07ec51f41217ad8 dr-offig <dr.offig@offig.com> 1690178151 +1000	commit (initial): Initial commit
+99863c450bc17f65376a5d0dd07ec51f41217ad8 0ef735f3a095e092efebbfbf15402df86f076132 dr-offig <dr.offig@offig.com> 1690179732 +1000	commit: Converted css px measurements to em
+0ef735f3a095e092efebbfbf15402df86f076132 564706d555f282ce86ba1265672d8e524837bc65 dr-offig <dr.offig@offig.com> 1690181370 +1000	commit: Added in resolution clause to media query
+564706d555f282ce86ba1265672d8e524837bc65 ee53e083eeba91092d7d00742173fd72771b5b18 dr-offig <dr.offig@offig.com> 1690533230 +1000	commit: Cleaned up commented out code
+ee53e083eeba91092d7d00742173fd72771b5b18 ee53e083eeba91092d7d00742173fd72771b5b18 dr-offig <dr.offig@offig.com> 1690675305 +1000	checkout: moving from main to ClientIcons
+ee53e083eeba91092d7d00742173fd72771b5b18 350ada814b79aa1922f204e89883345b0b95849d dr-offig <dr.offig@offig.com> 1690781612 +1000	commit: Added Our Clients section
+350ada814b79aa1922f204e89883345b0b95849d c7c725cca649ad664285390576b6e4f6320ef1cc dr-offig <dr.offig@offig.com> 1690782692 +1000	commit: Resized icons
+c7c725cca649ad664285390576b6e4f6320ef1cc f0624946bbfc9340090c4e90a21391bde6c5ed9b dr-offig <dr.offig@offig.com> 1690783156 +1000	commit: Set Font to Inter
+f0624946bbfc9340090c4e90a21391bde6c5ed9b f0624946bbfc9340090c4e90a21391bde6c5ed9b dr-offig <dr.offig@offig.com> 1690784893 +1000	checkout: moving from ClientIcons to ClientIconsFillTheBlanks
+f0624946bbfc9340090c4e90a21391bde6c5ed9b e934b8fe0191ef4e48b2be5273684022e9e76e9e dr-offig <dr.offig@offig.com> 1690784922 +1000	commit: Most of the style.css file is blanked out, ready to be filled in as an exercise
+e934b8fe0191ef4e48b2be5273684022e9e76e9e 131d53710d1591d0ddd664a419cf88588667ffda dr-offig <dr.offig@offig.com> 1690861302 +1000	commit: Removed resolution condition from media query
+131d53710d1591d0ddd664a419cf88588667ffda 196416f4a612285bc012fd7c3014b0c72d0b5841 ahlex-ict <alexmewha21@gmail.com> 1755195510 +1000	commit: Added everything
